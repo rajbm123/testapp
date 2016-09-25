@@ -11,7 +11,7 @@ set :repo_url, 'git@github.com:rajbm123/testapp.git'
  set :deploy_to, '/home/gcn/testapp'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
