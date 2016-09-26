@@ -38,3 +38,13 @@ set :scm, :git
 
 set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+namespace :deploy do
+
+ after :restart, :clear_catche do 
+ 	on roles(:web), in: :groups, limit: 3, wait: 10 do
+ 		
+ 	end
+ end
+
+end
